@@ -30,13 +30,13 @@
 
 <br>
 
-<em>معاينة للصفحة الرئيسية للوحة التحكم التفاعلية في Power BI</em>
+<em>Preview of the main page of the interactive Power BI dashboard</em>
 
 </div>
 
-مشروع تحليل بيانات شامل لتقييم المخاطر الائتمانية وتحليل محفظة القروض والودائع لـ **3,000 عميل بنكي**، بهدف مساعدة المؤسسات المالية على اتخاذ قرارات إقراض مدروسة وتقليل مخاطر التخلف عن السداد.
+A comprehensive data analytics project to assess credit risk and analyze the loan and deposit portfolio for **3,000 banking customers**, aimed at helping financial institutions make informed lending decisions and reduce default risk.
 
-> 📝 استبدل الصورة في الأعلى بسكرين شوت حقيقي من الداشبورد بتاعك — ضعه داخل مجلد `images/` باسم `dashboard-preview.png`.
+> 📝 Replace the image above with a real screenshot of your dashboard — place it inside the `images/` folder as `dashboard-preview.png`.
 
 ---
 
@@ -59,11 +59,11 @@
 
 # 🎯 Problem Statement & Objective
 
-تواجه البنوك والمؤسسات المالية مخاطر عدم سداد القروض من قِبل بعض العملاء بمختلف شرائحهم، مما يؤدي إلى خسائر مالية متراكمة. يهدف هذا المشروع إلى:
+Banks and financial institutions face the risk of loan default from certain customer segments, leading to accumulated financial losses. This project aims to:
 
-- 🔍 **تحليل المخاطر الائتمانية**: تقديم رؤى حول سلوك الاقتراض والودائع لمختلف شرائح العملاء (دخل مرتفع، متوسط، منخفض).
-- 📉 **تقليل مخاطر التعثر**: مساعدة إدارة البنك على اكتشاف الأنماط والسلوكيات عالية المخاطر لتقليل الخسائر أثناء منح القروض.
-- 📊 **بناء لوحة تحكم تفاعلية**: توفير مؤشرات أداء رئيسية (KPIs) لمختلف المستويات الإدارية لمتابعة محفظة القروض والودائع لحظياً.
+- 🔍 **Credit Risk Analysis**: Provide insights into borrowing and deposit behavior across different customer segments (high, medium, and low income).
+- 📉 **Default Risk Reduction**: Help bank management detect high-risk patterns and behaviors to reduce losses during loan approval.
+- 📊 **Interactive Dashboard**: Deliver key performance indicators (KPIs) for various management levels to monitor the loan and deposit portfolio in real time.
 
 ---
 
@@ -71,24 +71,24 @@
 
 <div align="center">
 
-| الخاصية | القيمة |
+| Metric | Value |
 |---|---:|
-| 📦 عدد السجلات | **3,000 عميل** |
-| 📐 عدد الأعمدة | **25 عمود** |
-| 🌍 نوع البيانات | **مالية وديموغرافية** |
+| 📦 Records | **3,000 customers** |
+| 📐 Columns | **25 columns** |
+| 🌍 Data Type | **Financial & Demographic** |
 
 </div>
 
-### أهم الأعمدة
+### Key Columns
 
 ```text
-✓ معلومات العملاء       → العمر (17–85)، الموقع، الجنسية، المهنة، تاريخ الانضمام
-✓ العلاقة المصرفية      → تجزئة / مؤسسات / بنك خاص / تجاري، المستشار الاستثماري، هيكل الرسوم
-✓ البيانات الائتمانية   → الدخل المقدر، رصيد التقاعد، عدد بطاقات الائتمان، تقييم CIBIL، عدد العقارات
-✓ الحسابات والقروض     → القروض المصرفية، إقراض الأعمال، رصيد بطاقة الائتمان، الودائع، الحسابات الجارية/التوفير، العملات الأجنبية
+✓ Customer Info       → Age (17–85), Location, Nationality, Occupation, Joined Bank Date
+✓ Banking Relationship → Retail / Institutional / Private Bank / Commercial, Investment Advisor, Fee Structure
+✓ Credit & Financial Data → Estimated Income, Superannuation Savings, Number of Credit Cards, CIBIL Rating, Properties Owned
+✓ Accounts & Loans     → Bank Loans, Business Lending, Credit Card Balance, Bank Deposits, Checking/Savings Accounts, Foreign Currency Accounts
 ```
 
-> ⚠️ **ملاحظة**: البيانات المستخدمة في هذا المشروع بيانات تعليمية/محاكاة (Simulated Dataset) لأغراض التحليل والتدريب، وليست بيانات عملاء حقيقيين.
+> ⚠️ **Note**: The data used in this project is a simulated/educational dataset for analysis and training purposes, and does not represent real customer data.
 
 ---
 
@@ -96,13 +96,13 @@
 
 <div align="center">
 
-| الأداة | الاستخدام |
+| Technology | Purpose |
 |---|---|
-| 🐍 **Python 3.x** (pandas, matplotlib, seaborn) | التحليل الاستكشافي (EDA) وهندسة الخصائص |
-| 🗄️ **MySQL** | تخزين البيانات والاستعلام عنها |
-| 📊 **Power BI Desktop** (Power Query, DAX) | نمذجة البيانات وبناء لوحة التحكم التفاعلية |
-| 🎨 **Canva** | تصميم الخلفيات والمخططات الهيكلية للداشبورد |
-| 🔗 **PyMySQL / mysql-connector-python** | الربط البرمجي بين Python وMySQL |
+| 🐍 **Python 3.x** (pandas, matplotlib, seaborn) | Exploratory Data Analysis (EDA) and feature engineering |
+| 🗄️ **MySQL** | Data storage and querying |
+| 📊 **Power BI Desktop** (Power Query, DAX) | Data modeling and building the interactive dashboard |
+| 🎨 **Canva** | Designing dashboard backgrounds and structural layouts |
+| 🔗 **PyMySQL / mysql-connector-python** | Programmatic connection between Python and MySQL |
 
 </div>
 
@@ -153,13 +153,13 @@
 
 </div>
 
-### خطوات العمل بالتفصيل
+### Step-by-Step Workflow
 
-1. **إدخال البيانات وقاعدة البيانات**: تحويل البيانات إلى CSV واستيرادها إلى قاعدة بيانات MySQL باسم `banking_case`.
-2. **الربط والتحليل الاستكشافي (EDA)**: ربط Python بـ MySQL عبر `pd.read_sql`، وإجراء تحليل أحادي ومتعدد المتغيرات.
-3. **هندسة الخصائص**: تصنيف الدخل المقدر إلى شرائح (`High`, `Mid`, `Low`) باستخدام `pd.cut`، وتحويل المعرفات الرقمية إلى تسميات نصية.
-4. **التصميم والتخطيط**: رسم سكتشات للواجهات وتصميم خلفيات Canva لإنشاء 5 صفحات (الرئيسية، القروض، الودائع، الملخص، الأسئلة والأجوبة).
-5. **بناء لوحة التحكم**: ربط Power BI بقاعدة البيانات، تفعيل التنقل بين الصفحات، وصياغة مقاييس DAX.
+1. **Data Ingestion & Database Setup**: Converted the data to CSV and imported it into a MySQL database named `banking_case`.
+2. **Connection & Exploratory Data Analysis (EDA)**: Connected Python to MySQL via `pd.read_sql`, and performed univariate and multivariate analysis.
+3. **Feature Engineering**: Segmented estimated income into bands (`High`, `Mid`, `Low`) using `pd.cut`, and converted numeric IDs into text labels.
+4. **Design & Planning**: Sketched UI layouts and designed Canva backgrounds to build 5 pages (Home, Loans, Deposits, Summary, Q&A).
+5. **Dashboard Development**: Connected Power BI to the database, enabled page navigation, and authored DAX measures.
 
 ---
 
@@ -297,29 +297,29 @@ Year of Joining = YEAR(banking_case[joined_bank])
 
 # 💡 Key Insights & Findings
 
-## 1️⃣ 💳 توزيع بطاقات الائتمان
+## 1️⃣ 💳 Credit Card Distribution
 
-حوالي **66%** من العملاء يحملون بطاقة ائتمانية واحدة فقط؛ الإناث أكثر ميلاً لبطاقة واحدة، بينما ترتفع نسبة الذكور الحاملين لبطاقتين أو أكثر.
+About **66%** of customers hold only one credit card; females are more inclined to hold a single card, while the proportion of males holding two or more cards is higher.
 
-## 2️⃣ 📊 الالتواء المالي
+## 2️⃣ 📊 Financial Skewness
 
-جميع المتغيرات المالية الرقمية (قروض، ودائع، أرصدة) تُظهر توزيعاً ملتوياً نحو اليمين (**Right-Skewed**).
+All numeric financial variables (loans, deposits, balances) show a **right-skewed** distribution.
 
-## 3️⃣ 🔗 ارتباط الودائع
+## 3️⃣ 🔗 Deposit Correlation
 
-ارتباط إيجابي قوي بين الودائع المصرفية، الحسابات الجارية، حسابات التوفير، وحسابات العملات الأجنبية (**correlation ≈ 0.41**).
+A strong positive correlation exists between bank deposits, checking accounts, savings accounts, and foreign currency accounts (**correlation ≈ 0.41**).
 
-## 4️⃣ 🧩 استقلالية استخدام الائتمان
+## 4️⃣ 🧩 Credit Usage Independence
 
-لا يوجد ارتباط قوي بين الدخل أو حجم القروض ورصيد البطاقة الائتمانية.
+No strong correlation exists between income or loan size and credit card balance.
 
-## 5️⃣ 🏦 المؤشرات الإجمالية للمحفظة
+## 5️⃣ 🏦 Overall Portfolio Indicators
 
-| المؤشر | القيمة |
+| Indicator | Value |
 |---|---:|
-| 💰 إجمالي محفظة القروض | **≈ 4.38 مليار** |
-| 💵 إجمالي محفظة الودائع | **≈ 3.77 مليار** |
-| 🏆 أبرز فئات العلاقة المصرفية | **البنك الخاص والبنك التجاري** |
+| 💰 Total Loan Portfolio | **≈ 4.38 Billion** |
+| 💵 Total Deposit Portfolio | **≈ 3.77 Billion** |
+| 🏆 Top Banking Relationship Segments | **Private Bank and Commercial Bank** |
 
 ---
 
@@ -348,23 +348,23 @@ Year of Joining = YEAR(banking_case[joined_bank])
 banking-risk-analytics/
 │
 ├── data/
-│   ├── raw_banking_data.xlsx        # البيانات الخام الأصلية
-│   └── banking.csv                  # الملف المجهز للاستيراد
+│   ├── raw_banking_data.xlsx        # Original raw data
+│   └── banking.csv                  # File prepared for import
 │
 ├── notebooks/
-│   └── banking_eda_analysis.ipynb   # دفتر تحليلات بايثون (EDA + MySQL Connector)
+│   └── banking_eda_analysis.ipynb   # Python analysis notebook (EDA + MySQL Connector)
 │
 ├── sql/
-│   └── schema_and_queries.sql       # سكريبت إنشاء قاعدة البيانات والاستعلامات
+│   └── schema_and_queries.sql       # Database creation script and queries
 │
 ├── dashboard/
-│   ├── banking_dashboard.pbix       # ملف Power BI التفاعلي
-│   └── canva_backgrounds/           # الخلفيات والتصميمات
+│   ├── banking_dashboard.pbix       # Interactive Power BI file
+│   └── canva_backgrounds/           # Backgrounds and design assets
 │
 ├── images/
-│   └── dashboard-preview.png        # صور المعاينة للـ README
+│   └── dashboard-preview.png        # Preview images for the README
 │
-├── requirements.txt                 # مكتبات بايثون المطلوبة
+├── requirements.txt                 # Required Python libraries
 └── README.md
 ```
 
@@ -372,40 +372,40 @@ banking-risk-analytics/
 
 # ⚙️ How to Run / Installation
 
-### 1. استنساخ المستودع
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ASHRAF29403/banking-risk-analytics.git
 cd banking-risk-analytics
 ```
 
-### 2. إعداد قاعدة البيانات (MySQL)
+### 2. Set Up the Database (MySQL)
 
 ```sql
 CREATE DATABASE banking_case;
 USE banking_case;
 ```
 
-ثم استورد `data/banking.csv` إلى جدول `customer`.
+Then import `data/banking.csv` into the `customer` table.
 
-### 3. إعداد بيئة Python
+### 3. Set Up the Python Environment
 
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/banking_eda_analysis.ipynb
 ```
 
-### 4. تشغيل لوحة التحكم
+### 4. Run the Dashboard
 
-افتح `dashboard/banking_dashboard.pbix` في Power BI Desktop، حدّث اتصال MySQL (`localhost:3306`)، ثم اضغط **Refresh**.
+Open `dashboard/banking_dashboard.pbix` in Power BI Desktop, refresh the MySQL connection (`localhost:3306`), then click **Refresh**.
 
 ---
 
 # 🚀 Future Improvements
 
-- 🤖 إضافة نموذج تعلم آلي (Machine Learning) للتنبؤ باحتمالية تعثر العميل عن السداد (Credit Default Prediction).
-- ☁️ نشر لوحة التحكم على Power BI Service لإتاحة الوصول الأونلاين.
-- ⏱️ أتمتة تحديث البيانات (Automated ETL Pipeline).
+- 🤖 Add a Machine Learning model to predict customer default probability (Credit Default Prediction).
+- ☁️ Publish the dashboard to Power BI Service for online access.
+- ⏱️ Automate data refresh (Automated ETL Pipeline).
 
 ---
 
@@ -416,7 +416,7 @@ Data Analyst | Machine Learning
 🎓 Faculty of Computers and Informatics, Zagazig University — AI & Data Science
 
 - 💻 GitHub: [@ASHRAF29403](https://github.com/ASHRAF29403)
-- 🔗 LinkedIn: [أضف رابط حسابك هنا]
-- 📧 Email: [أضف بريدك هنا]
+- 🔗 LinkedIn: [add your link here]
+- 📧 Email: [add your email here]
 
 </div>
